@@ -3,13 +3,14 @@ package com.example.luis.studentlife;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Welcome extends Activity {
+public class Welcome_1 extends AppCompatActivity {
 
     Button b1,b2;
     EditText ed1,ed2;
@@ -40,7 +41,7 @@ public class Welcome extends Activity {
                 }else{
                     Toast.makeText(getApplicationContext(), "Wrong Credentials", Toast.LENGTH_SHORT).show();
 
-                            tx1.setVisibility(View.VISIBLE);
+                    tx1.setVisibility(View.VISIBLE);
                     tx1.setBackgroundColor(Color.RED);
                     counter--;
                     tx1.setText(Integer.toString(counter));
